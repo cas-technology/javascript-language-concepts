@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <title>Javascript, a rodeo</title>
+</head>
+<body>
+<nav>
+
+</nav>
+<article>
+    <h1>Hi, this is a simple page to show Javascript language concepts</h1>
+    <ul id="language-concepts">
+    </ul>
+    <div id="app"></div>
+
+    <div>
+        <button onclick="oneLanguageConcepts()">1. Language concepts</button>
+        <button onclick="twoOOConcepts()">2. OO concepts</button>
+    </div>
+
+    <label>3. Clientside data storage (webstorage), enter a value:
+        <input type="text" name="web-storage" id="webstorage-example"/>
+    </label>
+    <button onclick="threeWebstorage()">Submit</button>
+    <button onclick="alert(localStorage.getItem('storage-example'));">Get</button>
+</article>
+<footer>
+
+</footer>
+
+<script src="../dist/app.js"></script>
+
+
+
+</body>
+</html>
