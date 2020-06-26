@@ -7,8 +7,29 @@ div {
 #app {
   border: none;
 }
-input ::before {
-  display: none;
+button:hover {
+  background-color: red;
+}
+
+a[href="https://cas.technology/"] {
+  color: red;
+}
+
+
+nav {
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+      border: 1px solid black;
+      border-radius: 3px;
+      padding: 3px 3px;
+    }
+  }
 }
 
 
