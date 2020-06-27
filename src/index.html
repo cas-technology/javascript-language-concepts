@@ -20,39 +20,43 @@
     </ul>
 </nav>
 <hr />
-<aside>
-    <ul>
-        <li>This should be some text to the side..</li>
-        <li>This should be some MORE text to the side..</li>
-        <li>This should be even more text to the side..</li>
-    </ul>
-</aside>
-
-<article class="container">
-    <ul id="language-concepts">
-    </ul>
-    <div id="app"></div>
-
-    <section>
-        <p>This is the bulk of the 'application'. Click around :)</p>
-    </section>
-    <section>
+<div id="page">
+    <aside>
         <ul>
-            <li><button onclick="oneLanguageConcepts()">1. Language concepts</button></li>
-            <li><button onclick="twoOOConcepts()">2. OO concepts</button></li>
-            <li>
-                <label>3. Clientside data storage (webstorage), enter a value:
-                    <input type="text" name="web-storage" id="webstorage-example"/>
-                </label>
-                <button onclick="threeWebstorage()">Submit</button>
-                <button onclick="alert(localStorage.getItem('storage-example'));">Get (including datestamp)</button>
-            </li>
-            <li><button onclick="promiseChainng()">10. Promise chaining</button></li>
-            <li><button onclick="cssPositioning()">23. CSS positioning</button> </li>
-            <li><button onclick="cssDisplay()">23. CSS display types</button> </li>
+            <li>This should be some text to the side..</li>
+            <li>This should be some MORE text to the side..</li>
+            <li>This should be even more text to the side..</li>
         </ul>
-    </section>
-</article>
+    </aside>
+
+    <article class="container">
+        <ul id="language-concepts">
+        </ul>
+        <div id="app"></div>
+
+        <section>
+            <p>This is the bulk of the 'application'. Click around :)</p>
+        </section>
+        <section>
+            <ul>
+                <li><button onclick="oneLanguageConcepts()">1. Language concepts</button></li>
+                <li><button onclick="twoOOConcepts()">2. OO concepts</button></li>
+                <li>
+                    <label>3. Clientside data storage (webstorage), enter a value:
+                        <input type="text" name="web-storage" id="webstorage-example"/>
+                    </label>
+                    <button onclick="threeWebstorage()">Submit</button>
+                    <button onclick="alert(localStorage.getItem('storage-example'));">Get (including datestamp)</button>
+                </li>
+                <li><button onclick="promiseChainng()">10. Promise chaining</button></li>
+                <li><button onclick="promiseCallbacks()">12. Promise with Callback func</button></li>
+                <li><button onclick="cssPositioning()">23. CSS positioning</button> </li>
+                <li><button onclick="cssDisplay()">23. CSS display types</button> </li>
+            </ul>
+        </section>
+    </article>
+</div>
+
 <footer class="container"><a href="https://cas.technology/">(c) cas.technology</a>, sementic footer tag</footer>
 
 
