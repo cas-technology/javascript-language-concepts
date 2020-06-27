@@ -5,7 +5,7 @@ div {
   display: block;
 }
 #app {
-  border: none;
+  border: 2px dotted red;
 }
 button:hover {
   background-color: red;
@@ -40,3 +40,94 @@ footer {
   _position:absolute;
   height:35px;
 }
+
+#none {
+  /*no position set!*/
+  border: 1px solid black;
+  left: +100px;
+}
+#relative {
+  position: relative;
+  border: 1px solid black;
+  left: +100px;
+}
+#absolute {
+  position: absolute;
+  border: 1px solid black;
+  left: +100px;
+}
+
+.css-display-props {
+  .example-square {
+    height: 50px;
+    width: 50px;
+    background-color: orangered;
+    border: 1px dotted black;
+  }
+  #flex {
+    display: flex;
+    flex-direction: row;
+  }
+  #inline {
+    display: inline;
+  }
+  #inline-block {
+    display: inline-block;
+  }
+  #block {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px ) {
+  /*very small screens*/
+  body {
+    max-width: 100%;
+
+  }
+  .nav-default {
+    display: none;
+  }
+  .nav-hamburger {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 601px ) {
+  /*slightly bigger and big screens*/
+  body {
+    max-width: 80%;
+
+  }
+  .nav-default {
+    display: block;
+  }
+  .nav-hamburger {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
